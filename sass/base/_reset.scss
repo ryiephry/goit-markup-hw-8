@@ -1,0 +1,59 @@
+:root {
+    --accent-color: #2196f3;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --white-color: #ffffff;
+    --background-dark-color: #2f303a;
+    --background-light-color: #f5f4fa;
+    --currentColor: rgb(196, 196, 34);
+    --main-q-b: cubic-bezier(0.4, 0, 0.2, 1);
+    --black-: black;
+    --checkbox-color: var(--white-color);
+
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    margin: 0px;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: currentColor;
+    font-weight: 500;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}

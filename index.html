@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widthdevice-width, initital-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link href="./css/main.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header class="header-section">
+        <div class="container header-container">
+            <nav class="header-navigation">
+                <!--Top bar -->
+
+                <a href="./index.html" class="logo">WebStudio
+                </a>
+
+                <ul class="navigation">
+
+                    <li class="navigation__item ">
+                        <a href="./index.html" class=" navigation-link__current navigation__link">Studio</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="portfolio.html" class="navigation__link">Portfolio</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="header-contacts">
+
+                <!--Contacts/email-->
+                <li class="contact-info">
+
+                    <a href="mailto:info@devstudio.com" class="contacts-link">
+
+                        <svg class="contacts-svg" width="16px" height="12px">
+
+                            <use href="./images/sprite.svg#icon-envelopesvg"></use>
+
+                        </svg>
+
+                        info@devstudio.com
+
+                    </a>
+                </li>
+                <li class="contact-info">
+
+                    <a href="tel:+380961111111" class="contacts-link">
+
+                        <svg class="contacts-svg" width="10px" height="16px">
+
+                            <use href="./images/sprite.svg#icon-smartphonesvg"> </use>
+
+                        </svg>
+
+                        +38 096 111 11 11
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-section">
+        <section class="hero">
+            <div class="container">
+                <!--Button middle segment-->
+
+                <h1 class="hero__titles"> EFFECTIVE SOLUTIONS FOR<br> YOUR BUSINESS</h1>
+
+                <!-- class="hero-button-positioning"> -->
+                <div class="div-hero">
+
+                    <div class="hero-container">
+
+                        <button class="hero-button " type="button" data-modal-open>
+
+                            Request Our Service
+
+                        </button>
+                    </div>
+                </div>
+
+                <div class="backdrop is-hidden" data-modal>
+
+                    <div class="modal" id="modal">
+
+                        <div class="modal-head ">
+
+                            <div class="modal-head-div">
+
+                                <h3 class="modal-header">Leave your information and we'll call you back</h3>
+
+                            </div>
+
+                            <button class="modal-button" type="button" data-modal-close>
+
+                                <svg class="close-modal-button" width="15px" height="15px">
+
+                                    <use href="./images/sprite.svg#icon-close-button">
+
+                                    </use>
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="modal-body">
+
+
+                            <form get="">
+                                <div class="div-forms">
+                                    <label type="text" class="Name-form">
+                                        Name
+                                        <div class="input-form-div">
+
+                                            <input type="text" name="name-form" class="input-form-main">
+
+                                            <svg class="svg-forms" width="18px" height="18px">
+
+                                                <use href="./images/sprite.svg#icon-person-svg">
+
+                                                </use>
+
+                                            </svg>
+
+                                        </div>
+                                    </label>
+
+
+                                </div>
+
+                                <div class="div-forms">
+                                    <label class="telephone-form">
+                                        Telephone
+
+                                        <div class="input-form-div">
+
+                                            <input type="tele" name="tele-form" class="input-form-main">
+
+
+                                            <svg class="svg-forms" width="18px" height="18px">
+
+                                                <use href="./images/sprite.svg#icon-personal-phone-svg">
+
+                                                </use>
+
+                                            </svg>
+
+                                        </div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="div-forms">
+                                    <label class="E-mail-form">
+
+                                        E-mail
+
+                                        <div class="input-form-div">
+
+                                            <input type="email" name="email-form" class="input-form-main" />
+
+                                            <svg class="svg-forms" width="18px" height="18px">
+
+                                                <use href="./images/sprite.svg#icon-email-svg">
+
+                                                </use>
+                                            </svg>
+
+                                        </div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="div-forms comments-div">
+                                    <label class="comments-form">
+                                        Comments
+
+                                        <textarea id="comments-id" rows="5" placeholder="Enter the text"
+                                            class="comments-textarea"></textarea>
+
+                                    </label>
+
+
+                                </div>
+                                <div class="div-for--checkbox">
+
+                                    <input class="checkbox" type="checkbox" name="checkbox-name" width="20px"
+                                        value="val-checkbox" required id="checkbox-policy">
+
+                                    <label class="my-modal-checkbox-label" for="checkbox-policy">
+
+
+                                        <span class="my-span-checkbox">
+
+                                            <svg class="my-icon" type="checkbox" width="16px" height="15px">
+                                                <use href="./images/sprite.svg#icon-Vector1">
+                                                </use>
+                                            </svg>
+
+                                        </span>
+
+                                        <span class="checkbox-text"> I agree with the newsletter and accept
+                                            the
+
+                                            <a href="./index.html" class=" terms-conditions">
+                                                Terms and Conditions
+                                            </a>
+
+                                        </span>
+
+
+
+
+                                    </label>
+
+                                </div>
+                                <div class="button-modal-submit">
+
+                                    <label type="submit">
+
+                                        <button href="./index.html" type="button" class="button-send ">Send</button>
+
+                                    </label>
+                                </div>
+                            </form>
+
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="paragraphs-discription">
+            <div class="container">
+                <!--middle segment-->
+                <h2 class="our-futures"> our futures</h2>
+
+                <ul class="paragraphs-positioning">
+
+                    <li class="paragraphs-item">
+
+                        <div class="futures-svg">
+
+                            <svg class="" width="66px" height="70px">
+
+                                <use href="./images/sprite.svg#icon-antennasvg"></use>
+
+                            </svg>
+
+                        </div>
+
+                        <h3 class="paragraphs-titles">ATTENTION TO DETAILS</h3>
+                        <p class="paragraphs-text">
+                            We go into all the details and processes of your business to develop a customized solution.
+                        </p>
+                    </li>
+                    <li class="paragraphs-item">
+
+                        <div class="futures-svg">
+
+                            <svg class="" width="66px" height="70px">
+
+                                <use href="./images/sprite.svg#icon-clocksvg"></use>
+
+                            </svg>
+
+                        </div>
+                        <h3 class="paragraphs-titles">PUNCTUALITY</h3>
+                        <p class="paragraphs-text">
+                            With us, you can feel safe and secure. An important principle of the company: respect your
+                            time
+                            and
+                            respect the agreed deadlines.
+                        </p>
+                    </li>
+                    <li class="paragraphs-item">
+
+                        <div class="futures-svg">
+
+                            <svg class="" width="66px" height="70px">
+
+                                <use href="./images/sprite.svg#icon-diagramsvg"></use>
+
+                            </svg>
+
+                        </div>
+                        <h3 class="paragraphs-titles">PLANNING</h3>
+                        <p class="paragraphs-text">
+                            You will be able to observe and participate in every phase of solution development and
+                            implementation.
+                        </p>
+                    </li>
+                    <li class="paragraphs-item">
+
+                        <div class="futures-svg">
+
+                            <svg class="" width="66px" height="70px">
+
+                                <use href="./images/sprite.svg#icon-astronautsvg"></use>
+
+                            </svg>
+
+                        </div>
+                        <h3 class="paragraphs-titles">MODERN TECHNOLOGIES</h3>
+                        <p class="paragraphs-text">
+                            We use innovative tools to solve assigned tasks. It's time to simplify work processes.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="images-section">
+            <!--images segment-->
+            <div class="container">
+                <h2 class="images-title"> What we do</h2>
+                <ul class="image-list">
+
+                    <li class="images-item">
+                        <img src="./images/firstpic.jpg" alt=" DESKTOP APPS" width="370">
+                        <div class="overlay-box">
+
+                            <h3 class="text-overlay">DESKTOP APPS</h3>
+                        </div>
+                    </li>
+                    <li class="images-item">
+                        <img src="./images/secondpic.jpg" alt="Mobile APPS" width="370">
+                        <div class="overlay-box">
+
+                            <h3 class="text-overlay">Mobile APPS</h3>
+
+                        </div>
+                    </li>
+                    <li class="images-item">
+                        <img src="./images/thirdpic.jpg" alt=" DESIGN SOLUTIONS" width="370">
+                        <div class="overlay-box">
+
+                            <h3 class="text-overlay">DESIGN SOLUTIONS</h3>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="profilepics-section">
+
+            <div class="container">
+                <h2 class="profilepic-title">Our Team </h2>
+
+                <ul class="profilepic-list">
+
+                    <li class="profilepic-item">
+                        <img src="./images/profilespic1.jpg" alt="Christopher Walker" width="270">
+
+                        <div class="profile-spacing">
+
+                            <h3 class="profile-title"> Christopher Walker </h3>
+                            <p class="paragraphs">Product Designer</p>
+
+                            <div class="icon-list-profilepics">
+
+
+                                <ul class="svg-profile-flex">
+
+
+                                    <li class="-svg-social-profile ">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-instagram-2"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="-svg-social-profile">
+
+                                        <a class="icons-for-profilepics" href="https://twitter.com/?lang=en">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-twittersvg"></use>
+
+                                            </svg>
+                                        </a>
+
+                                    </li>
+
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-facebooksvg">
+                                                </use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-linkedinsvg"></use>
+
+                                            </svg>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="profilepic-item">
+                        <img src="./images/profilepic2.jpg" alt="Kylie Evans" width="270">
+
+                        <div class="profile-spacing">
+
+                            <h3 class="profile-title"> Kylie Evans </h3>
+                            <p class="paragraphs">Frontend Developer</p>
+
+                            <div class="icon-list-profilepics">
+                                <ul class="svg-profile-flex">
+
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-instagram-2"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-twittersvg"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-facebooksvg"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-linkedinsvg"></use>
+
+                                            </svg>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="profilepic-item">
+                        <img src="./images/profilepic3.jpg" alt="Ryan Harris" width="270">
+
+                        <div class="profile-spacing">
+
+                            <h3 class="profile-title"> Ryan Harris </h3>
+                            <p class="paragraphs">Marketing</p>
+
+                            <div class="icon-list-profilepics">
+
+                                <ul class="svg-profile-flex">
+
+
+                                    <li class="-svg-social-profile">
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-instagram-2"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-twittersvg"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-facebooksvg"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-linkedinsvg"></use>
+
+                                            </svg>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="profilepic-item">
+                        <img src="./images/profilepic4.jpg" alt="Tyler Moore" width="270">
+
+                        <div class="profile-spacing">
+
+                            <h3 class="profile-title"> Tyler Moore </h3>
+                            <p class="paragraphs">UI Designer</p>
+
+                            <div class="icon-list-profilepics">
+
+                                <ul class="svg-profile-flex">
+
+                                    <li class="-svg-social-profile">
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-instagram-2"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-twittersvg"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-facebooksvg"></use>
+
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="-svg-social-profile">
+
+                                        <a href="https://twitter.com/?lang=en" class="icons-for-profilepics">
+
+                                            <svg class="socialmedia" width="20px" height="20px">
+
+                                                <use href="./images/sprite.svg#icon-linkedinsvg"></use>
+
+                                            </svg>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="regular-section">
+
+            <div class="container">
+
+                <h2 class="regular-title">Regular Customers</h2>
+
+                <ul class="regular-list">
+
+                    <li class="regular-item">
+
+                        <a href="https://www.facebook.com/" class="icons-6">
+
+                            <svg class="fill-current-color" width="41px" height="77px">
+
+                                <use href="./images/sprite.svg#icon-regularcustumers01"></use>
+
+                            </svg>
+                        </a>
+                    </li>
+
+                    </li>
+
+                    <li class="regular-item">
+
+                        <a href="https://www.facebook.com/" class="icons-6">
+
+                            <svg class="fill-current-color" width="40px" height="52px">
+
+                                <use href="./images/sprite.svg#icon-regularcustumers02"></use>
+
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="regular-item">
+
+                        <a href="https://www.facebook.com/" class="icons-6">
+
+                            <svg class="fill-current-color" width="43.46px" height="77px">
+
+                                <use href="./images/sprite.svg#icon-regularcustumers03"></use>
+
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="regular-item">
+
+                        <a href="https://www.facebook.com/" class="icons-6">
+
+                            <svg class="fill-current-color" width="84px" height="40px">
+
+                                <use href=" ./images/sprite.svg#icon-regularcustumers04"> </use>
+
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="regular-item">
+
+                        <a href="https://www.facebook.com/" class="icons-6">
+
+                            <svg class="fill-current-color" width="62px" height="45px">
+
+                                <use href="./images/sprite.svg#icon-regularcustumers05"> </use>
+
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="regular-item">
+
+                        <a href="https://www.facebook.com/" class="icons-6">
+
+                            <svg class="fill-current-color" width="93.79px" height="77px">
+
+                                <use href="./images/sprite.svg#icon-regularcustumers06">
+                                </use>
+
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer class="footer-section">
+
+        <div class="container footer-container">
+            <div>
+                <div class="footer-webstudio">
+                    <a href="./index.html" class="logo">WebStudio</a>
+                </div>
+                <address class="footer-seperation">
+                    <ul class="footer-list">
+                        <li class="footer-paragraph-space-1">
+                            <a href="https://goo.gl/maps/Pc82vpNhHuvUtrE47" target="_blank" class="white-address">695
+                                Park
+                                Ave,
+                                New York, NY 10065,
+                                <br>United States</a>
+                        </li>
+                        <li class="footer-paragraph-space-1">
+                            <a href="mailto:info@example.com" class="mail-tele-color">info@example.com</a>
+                        </li>
+                        <li class="footer-paragraph-space-1">
+                            <a href="tel: +1 212-772-4150" class="mail-tele-color">+1 212-772-4150 </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="find-us-section">
+                <h2 class="Find-us-on">Find us on</h2>
+
+                <ul class="find-us-list">
+                    <li class="footer-icons">
+
+                        <a href="https://www.facebook.com/" class="footer-4-social">
+
+                            <svg class="footer-color-fill" width="20px" height="20px">
+
+                                <use href="./images/sprite.svg#icon-instagram-2"></use>
+
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="footer-icons">
+
+                        <a href="https://www.facebook.com/" class="footer-4-social">
+
+                            <svg class="footer-color-fill" width="20px" height="20px">
+
+                                <use href="./images/sprite.svg#icon-twittersvg"></use>
+
+
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="footer-icons">
+
+                        <a href="https://www.facebook.com/" class="footer-4-social">
+
+                            <svg class="footer-color-fill" width="20px" height="20px">
+
+                                <use href="./images/sprite.svg#icon-facebooksvg"></use>
+
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="footer-icons">
+                        <a href="https://www.facebook.com/" class="footer-4-social">
+
+                            <svg class="footer-color-fill" width="20px" height="20px">
+
+                                <use href="./images/sprite.svg#icon-linkedinsvg"></use>
+
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--SUBSCRIBE SECTION / MINIFORM -->
+
+            <div class="footer-right">
+
+                <div class="subscribe-section">
+
+                    <h3 class="subscribe-header">Subscribe to the newsletter</h3>
+
+                    <form class="form-footer">
+                        <label class="form-footer-input">
+                            <input type="email" class="input-design" placeholder="E-mail" />
+                        </label>
+
+
+                        <div class="footer-button">
+                            <label type="button">
+                                <button href="index.html" class="subscribe-button" type="submit">Subscribe
+                                    <svg class="subscibe-svg" width="24px" height="24px">
+                                        <use href="./images/sprite.svg#icon-icon-send-svg"></use>
+                                    </svg>
+                                </button>
+                            </label>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>

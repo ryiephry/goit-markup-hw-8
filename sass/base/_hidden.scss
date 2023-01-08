@@ -1,0 +1,57 @@
+/* things that are hidden */
+.backdrop {
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    visibility: visible;
+}
+
+.is-hidden {
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.our-futures {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.overflow-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translatey(100%);
+    transition: transform 250ms;
+    transition-delay: var(--main-q-b);
+    z-index: 2;
+    padding: 30px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.template:hover .overflow-text {
+    transform: translatex(0);
+}

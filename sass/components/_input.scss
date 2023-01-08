@@ -1,0 +1,54 @@
+/* input */
+.input-form-div {
+    display: block;
+    position: relative;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--main-q-b);
+}
+
+.input-form-main {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    width: 448px;
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 4px;
+    margin-top: 4px;
+    color: #757575;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: color 250ms var(--main-q-b), border 250ms var(--main-q-b);
+
+    &:focus,
+    &:hover {
+            border: 1px solid var(--accent-color);
+        }
+}
+
+
+.input-form-main:focus+.svg-forms,
+.input-form-main:hover+.svg-forms {
+    color: var(--accent-color);
+}
+
+.input-design {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--background-dark-color);
+    padding: 10px;
+    width: 350px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    outline: none;
+    transition: color 250ms var(--main-q-b), border 250ms var(--main-q-b);
+
+    &:hover,
+    &:focus {
+            border: 1px solid var(--accent-color);
+        }
+}

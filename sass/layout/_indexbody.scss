@@ -1,0 +1,202 @@
+                               /* hero section */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--background-dark-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) , url("./../images/background-img-index-hw04.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__titles {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    border-color: var(--primary-text-color);
+    margin-bottom: 30px;
+}
+
+.div-hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+                    /* paragraphs description */
+
+.paragraphs-discription {
+    padding-top: 94px;
+}
+
+.paragraphs-positioning {
+    display: flex;
+}
+
+.paragraphs-item {
+    max-width: 270px;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.paragraphs-titles {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.paragraphs-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+                                  /* images  section */
+
+.images-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.images-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.image-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.images-item {
+    position: relative;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+/*
+.images-item:not(:last-child) {
+    margin-right: 30px;
+}*/
+
+.overlay-box {
+    bottom: 0px;
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+}
+
+.text-overlay {
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* 4 profile pics section */
+
+.profilepics-section{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    background-color: var(--background-light-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.profilepic-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--background-light-color);
+    margin-bottom: 50px;
+}
+
+.profilepic-list {
+display: flex;
+}
+
+.profilepic-item {
+border-radius: 0px 0px 4px 4px;
+ 
+     &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.profile-spacing {
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF
+}
+.profile-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.paragraphs {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.icon-list-profilepics {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 10px;
+    margin-top: 16px;
+}
+
+.svg-profile-flex {
+    display: flex;
+    padding-bottom: 0px;
+    width: 206px;
+}
+
+.-svg-social-profile {
+    margin: auto;
+    border-radius: 24px;
+    color: #AFB1B8;
+    cursor: pointer;
+    position: relative;
+}
+
+                  /* portfolo page */
