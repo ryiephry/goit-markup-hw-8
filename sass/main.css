@@ -87,7 +87,8 @@ ul {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -146,9 +147,7 @@ ul {
   position: relative;
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
 
@@ -192,7 +191,6 @@ ul {
 .contact-info {
   position: relative;
 }
-
 .contact-info:not(:last-child) {
   margin-right: 50px;
 }
@@ -208,9 +206,7 @@ ul {
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:hover, .contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -231,10 +227,14 @@ ul {
 }
 
 .contacts-link:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(o);
 }
 
-
+@media screen and (min-width: 500px) {
+  .header-section {
+    background-color: rgb(200, 130, 0);
+  }
+}
 /* hero section */
 .hero {
   padding-top: 200px;
@@ -280,7 +280,6 @@ ul {
 .paragraphs-item {
   max-width: 270px;
 }
-
 .paragraphs-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -325,7 +324,6 @@ ul {
 .images-item {
   position: relative;
 }
-
 .images-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -383,7 +381,6 @@ ul {
 .profilepic-item {
   border-radius: 0px 0px 4px 4px;
 }
-
 .profilepic-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -471,7 +468,6 @@ ul {
   position: relative;
   transition: color 250ms var(--main-q-b), border-color 250ms var(--main-q-b);
 }
-
 .regular-item:hover {
   border: 1px solid #2196f3;
   color: #2196f3;
@@ -601,7 +597,6 @@ ul {
   margin-bottom: 30px;
   margin-right: 30px;
 }
-
 .template:hover {
   border-bottom: 0px;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
@@ -662,14 +657,12 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: color 250ms var(--main-q-b), border 250ms var(--main-q-b);
 }
-
-.input-form-main:focus,
-.input-form-main:hover {
+.input-form-main:focus, .input-form-main:hover {
   border: 1px solid var(--accent-color);
 }
 
-.input-form-main:focus+.svg-forms,
-.input-form-main:hover+.svg-forms {
+.input-form-main:focus + .svg-forms,
+.input-form-main:hover + .svg-forms {
   color: var(--accent-color);
 }
 
@@ -688,9 +681,7 @@ ul {
   outline: none;
   transition: color 250ms var(--main-q-b), border 250ms var(--main-q-b);
 }
-
-.input-design:hover,
-.input-design:focus {
+.input-design:hover, .input-design:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -743,9 +734,7 @@ ul {
   transition: color 250ms var(--main-q-b);
   background-color: #ffffff;
 }
-
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   color: #2196F3;
 }
 
@@ -812,14 +801,12 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: color 250ms var(--main-q-b), border 250ms var(--main-q-b);
 }
-
-.input-form-main:focus,
-.input-form-main:hover {
+.input-form-main:focus, .input-form-main:hover {
   border: 1px solid var(--accent-color);
 }
 
-.input-form-main:focus+.svg-forms,
-.input-form-main:hover+.svg-forms {
+.input-form-main:focus + .svg-forms,
+.input-form-main:hover + .svg-forms {
   color: var(--accent-color);
 }
 
@@ -848,9 +835,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border 250ms var(--main-q-b);
 }
-
-.comments-textarea:hover,
-.comments-textarea:focus {
+.comments-textarea:hover, .comments-textarea:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -863,7 +848,8 @@ ul {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
   left: 65px;
@@ -881,7 +867,7 @@ input[type=checkbox] {
   display: none;
 }
 
-.checkbox:checked+.my-modal-checkbox-label>.my-span-checkbox {
+.checkbox:checked + .my-modal-checkbox-label > .my-span-checkbox {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
 }
@@ -914,7 +900,6 @@ input[type=checkbox] {
   color: #757575;
   transition: color 250ms var(--main-q-b);
 }
-
 .terms-conditions:hover {
   color: var(--accent-color);
 }
@@ -938,9 +923,7 @@ input[type=checkbox] {
   background-color: var(--accent-color);
   transition: color 250ms var(--main-q-b), box-shadow 250ms var(--main-q-b);
 }
-
-.button-send:hover,
-.button-send:focus {
+.button-send:hover, .button-send:focus {
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -949,7 +932,6 @@ input[type=checkbox] {
   fill: currentColor;
   padding-right: 1px;
 }
-
 .contacts-svg:hover {
   fill: currentColor;
   color: #2196F3;
@@ -972,9 +954,7 @@ input[type=checkbox] {
   transition-duration: 250ms;
   transition: color 250ms var(--main-q-b), background-color 250ms var(--main-q-b);
 }
-
-.icons-for-profilepics:hover,
-.icons-for-profilepics:focus {
+.icons-for-profilepics:hover, .icons-for-profilepics:focus {
   background-color: #2196F3;
   color: #FFFFFF;
 }
@@ -984,7 +964,6 @@ input[type=checkbox] {
   padding: 25px 102px;
   margin-bottom: 30px;
 }
-
 .futures-icon-svg:hover {
   border: #212121;
   border-width: 2px;
@@ -1003,9 +982,7 @@ input[type=checkbox] {
   position: relative;
   transition: color 250ms var(--main-q-b), border-color 250ms var(--main-q-b);
 }
-
-.icons-6:hover,
-.icons-6:focus {
+.icons-6:hover, .icons-6:focus {
   color: #2196F3;
 }
 
@@ -1032,9 +1009,7 @@ input[type=checkbox] {
   border-radius: 50%;
   transition: color 250ms var(--main-q-b), background-color 250ms var(--main-q-b);
 }
-
-.footer-4-social:hover,
-.footer-4-social:focus {
+.footer-4-social:hover, .footer-4-social:focus {
   border-radius: 23px;
   background-color: #2196F3;
   color: #FFFFFF;
@@ -1065,9 +1040,7 @@ input[type=checkbox] {
   justify-content: center;
   z-index: 2;
 }
-
-.hero-button:hover,
-.hero-button:focus {
+.hero-button:hover, .hero-button:focus {
   color: rgb(255, 255, 255);
 }
 
@@ -1107,7 +1080,6 @@ input[type=checkbox] {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
 }
-
 .left-to-right-button:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -1134,6 +1106,4 @@ input[type=checkbox] {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
