@@ -572,13 +572,14 @@ ul {
   border: 1px solid #2196f3;
   color: #2196f3;
 }
-.regular-item .regular-item:not(:last-child) {
-  margin-right: 30px;
-}
 @media screen and (max-width: 480px) {
   .regular-item:not(:last-child) {
     margin-right: 0px;
   }
+}
+
+.regular-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* footer */
