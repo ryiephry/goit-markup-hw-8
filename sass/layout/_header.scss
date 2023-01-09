@@ -126,14 +126,66 @@ $accent-color:#2196f3;
     transform: scaleX(1);
 }
 
+.mobile-button {
+    display:none;
+    background-color:white;
+    border-radius:20px;
+    border:none;
+  
+    &:hover
+    &:focus {
+            color: #2196F3;
+            background-color:gray;
+        }
+}
 
-@media screen and (min-width: 500px) {
 
-    .header-section {
-
-        background-color: rgb(200, 130, 0);
-    }
+.mobile-icon {
+    min-width:40px;
+    min-height:40px;
 
 }
+
+
+
+@media screen and (max-width: 480px) {
+     
+    .mobile-button {
+    display:block;
+    position:absolute;
+    right:5%;
+    min-width: 40px;
+    min-height: 40px;
+    transition:color 250ms var(--main-q-b);
+
+
+    &:hover ,
+    &:focus {
+    color:#2196F3;
+    }
+}
+
+
+  .header-container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  .navigation {
+      display: none;
+
+  }
+
+  .contact-info {
+      display: none;
+  }
+  
+  .hero__titles {
+    font-size: 25px;
+  }
+}
+
+
+
 
  
