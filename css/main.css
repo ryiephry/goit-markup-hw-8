@@ -572,14 +572,13 @@ ul {
   border: 1px solid #2196f3;
   color: #2196f3;
 }
+.regular-item:not(:last-child) {
+  margin-right: 30px;
+}
 @media screen and (max-width: 480px) {
   .regular-item:not(:last-child) {
     margin-right: 0px;
   }
-}
-
-.regular-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* footer */
@@ -594,22 +593,51 @@ ul {
   display: flex;
   align-items: baseline;
 }
+@media screen and (max-width: 480px) {
+  .footer-container {
+    display: block;
+  }
+}
 
 .footer-webstudio {
   margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .footer-webstudio {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-seperation {
   display: flex;
   font-style: normal;
 }
+@media screen and (max-width: 480px) {
+  .footer-seperation {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .footer-list {
   margin-right: 70px;
 }
+@media screen and (max-width: 480px) {
+  .footer-list {
+    margin-right: 0px;
+  }
+}
 
 .footer-paragraph-space-1 {
   margin-top: 2px;
+}
+@media screen and (max-width: 480px) {
+  .footer-paragraph-space-1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .white-address {
@@ -637,13 +665,28 @@ ul {
   width: 206px;
   margin-right: 91px;
 }
+@media screen and (max-width: 480px) {
+  .find-us-section {
+    margin-right: 0px;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
 
 .Find-us-on {
   font-weight: 700;
+  font-size: 18px;
+  line-height: 16.4px;
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--white-color);
   margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Find-us-on {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .find-us-list {
@@ -652,19 +695,38 @@ ul {
 }
 
 /* footer right section */
-/*.footer-right{}*/
+.footer-right {
+  margin-top: 50px;
+}
+
 .subscribe-header {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 480px) {
+  .subscribe-header {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .form-footer {
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .form-footer {
+    display: block;
+  }
+}
+
+.form-footer-input {
+  display: flex;
+  justify-content: center;
 }
 
 /* portfolio body */
@@ -777,7 +839,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--background-dark-color);
   padding: 10px;
-  width: 350px;
+  width: 360px;
   height: 50px;
   font-family: Roboto;
   font-size: 16px;
@@ -803,6 +865,12 @@ ul {
   width: 528px;
   height: 610px;
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 400px;
+    height: 600px;
+  }
+}
 
 .modal-head {
   display: flex;
@@ -815,6 +883,11 @@ ul {
 .modal-head-div {
   margin-top: 40px;
 }
+@media screen and (max-width: 480px) {
+  .modal-head-div {
+    margin-top: 45px;
+  }
+}
 
 .modal-header {
   font-weight: 700;
@@ -822,6 +895,11 @@ ul {
   line-height: 23px;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 480px) {
+  .modal-header {
+    font-size: 16px;
+  }
 }
 
 .modal-button {
@@ -850,6 +928,12 @@ ul {
 
 .modal-body {
   padding: 10px 40px;
+}
+@media screen and (max-width: 480px) {
+  .modal-body {
+    padding: 10px 20px;
+    padding-right: 30px;
+  }
 }
 
 .div-forms {
@@ -909,6 +993,11 @@ ul {
 .input-form-main:focus, .input-form-main:hover {
   border: 1px solid var(--accent-color);
 }
+@media screen and (max-width: 480px) {
+  .input-form-main {
+    width: 360px;
+  }
+}
 
 .input-form-main:focus + .svg-forms,
 .input-form-main:hover + .svg-forms {
@@ -942,6 +1031,11 @@ ul {
 }
 .comments-textarea:hover, .comments-textarea:focus {
   border: 1px solid var(--accent-color);
+}
+@media screen and (max-width: 480px) {
+  .comments-textarea {
+    width: 360px;
+  }
 }
 
 /*.div-for--checkbox {}*/
@@ -1224,6 +1318,11 @@ input[type=checkbox] {
 .footer-button {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .footer-button {
+    margin-top: 20px;
+  }
 }
 
 .subscribe-button {

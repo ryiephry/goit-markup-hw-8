@@ -109,6 +109,13 @@
 .footer-button {
     display: flex;
     justify-content: center;
+
+    @media  screen and (max-width:480px) {
+        &{
+            margin-top:20px;
+        }
+        
+    }
 }
 
 .subscribe-button {

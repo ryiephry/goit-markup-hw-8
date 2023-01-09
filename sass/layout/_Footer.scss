@@ -10,23 +10,57 @@
 .footer-container {
     display: flex;
     align-items: baseline;
+
+    @media screen and (max-width:480px) {
+        &{
+            display:block;
+        }
+    }
 }
 
 .footer-webstudio {
     margin-bottom: 10px;
+
+    @media screen and (max-width:480px) {
+            &{
+               display:flex;
+               justify-content:center;
+            }
+        }
 }
 
 .footer-seperation {
     display: flex;
     font-style: normal;
+
+    @media screen and (max-width:480px) {
+            &{
+                display: flex;
+                justify-content: center;
+            }
+        }
 }
 
 .footer-list {
     margin-right: 70px;
+
+    @media screen and (max-width:480px) {
+            & {     
+                margin-right:0px;
+            }
+        }
 }
 
 .footer-paragraph-space-1 {
     margin-top: 2px;
+
+    @media screen and (max-width:480px) {
+            & {
+                display: flex;
+                justify-content: center;
+                text-align:center;
+            }
+        }
 }
 
 .white-address {
@@ -54,14 +88,30 @@
 .find-us-section {
     width: 206px;
     margin-right: 91px;
+
+    @media screen and (max-width:480px) {
+
+        margin-right:0px;
+        margin: auto;
+        margin-top: 50px;
+    }
 }
 
 .Find-us-on {
     font-weight: 700;
+    font-size:18px;
+    line-height:16.4px;
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--white-color);
     margin-bottom: 20px;
+
+    @media screen and (max-width:480px) {
+            &{
+                display: flex;
+                justify-content: center;
+            }
+        }
 }
 
 .find-us-list {
@@ -70,26 +120,44 @@
 }
 
 /* footer right section */
-/*.footer-right{}*/
+.footer-right{ 
+    margin-top:50px;
+}
 
-
-.footer-right-section {}
 
 .subscribe-section {}
 
 
 .subscribe-header {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+
+   @media screen and (max-width:480px) {
+
+    &{
+        display:flex;
+        justify-content: center;
+    }
+   }
 }
 
 .form-footer {
     display: flex;
+
+    @media screen and (max-width:480px) {
+
+        &{
+            display:block;
+        }
+    }
 }
 
-.form-footer-input {}
+.form-footer-input {
+    display:flex;
+    justify-content:center;
+}

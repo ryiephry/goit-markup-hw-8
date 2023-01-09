@@ -64,7 +64,9 @@
             color: #2196f3;
         }
 
-     
+         &:not(:last-child) {
+             margin-right: 30px;
+         }
 
       @media screen and (max-width:480px) {
         &:not(:last-child){
@@ -74,6 +76,3 @@
       }
 }
 
-.regular-item:not(:last-child) {
-    margin-right: 30px;
-}
