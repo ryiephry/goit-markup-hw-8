@@ -1,4 +1,38 @@
 /* button section */
+
+.mobile-button {
+    display: none;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+
+    &:hover &:focus {
+        color: #2196F3;
+    }
+
+    @media screen and (max-width: 480px) {
+
+        & {
+            display: block;
+            position: absolute;
+            right: 5%;
+            min-width: 40px;
+            min-height: 40px;
+            transition: color 250ms var(--main-q-b);
+
+            &:hover,
+            &:focus {
+                color: #2196F3;
+            }
+        }
+    }
+}
+
+.mobile-icon {
+    min-width: 40px;
+    min-height: 40px;
+}
+
 .hero-button {
     font-weight: 700;
     font-size: 16px;

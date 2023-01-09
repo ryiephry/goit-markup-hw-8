@@ -18,6 +18,13 @@
     color: var(--white-color);
     border-color: var(--primary-text-color);
     margin-bottom: 30px;
+
+    @media screen and (max-width:480px) {
+
+        &{
+                    font-size: 25px;   
+        }
+    }
 }
 
 .div-hero {
@@ -35,10 +42,24 @@
 
 .paragraphs-discription {
     padding-top: 94px;
+
+    @media screen and (max-width:480px) {
+      
+        &{
+            margin-bottom:20px;
+        }
+    }
 }
 
 .paragraphs-positioning {
     display: flex;
+
+    @media screen and (max-width:480px) {
+
+        &{
+            display:block;
+        }
+    }
 }
 
 .paragraphs-item {
@@ -46,7 +67,25 @@
 
     &:not(:last-child) {
             margin-right: 30px;
+
+
         }
+
+                @media screen and (max-width:480px) {
+        
+                    & {
+                        padding-bottom:20px;
+                        max-width: 435px;
+                    
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 0px;
+                    }
+
+
+                }
+
 }
 
 .paragraphs-titles {
@@ -56,6 +95,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+
+  @media screen and (max-width:480px) {
+
+     &{
+      display:flex;
+      justify-content: center;
+      margin-bottom:10px;
+     }
+  }
 }
 
 .paragraphs-text {
@@ -64,6 +112,13 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+@media screen and (max-width:480px) {
+
+        &{
+            font-size: 12px;
+        }
+    }
 }
 
                                   /* images  section */
@@ -71,6 +126,13 @@
 .images-section {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width:480px) {
+
+        &{
+            display:none;
+        }
+    }
 }
 
 .images-title {
@@ -129,6 +191,14 @@
     background-color: var(--background-light-color);
     padding-top: 94px;
     padding-bottom: 94px;
+
+   @media screen and (max-width:480px) {
+
+     &{
+        padding-top:50px;
+        padding-bottom:50px;
+     }
+   }
 }
 
 .profilepic-title{
@@ -140,10 +210,26 @@
     color: var(--primary-text-color);
     background-color: var(--background-light-color);
     margin-bottom: 50px;
+ 
+    @media screen and (max-width:480px) {
+
+        &{
+            font-size:30px;
+            margin-bottom:25px;
+        }
+    }
 }
 
 .profilepic-list {
-display: flex;
+ display: flex;
+
+  @media screen and (max-width:480px) {
+
+    &{
+        display:block;
+
+    }
+  }
 }
 
 .profilepic-item {
@@ -151,6 +237,15 @@ border-radius: 0px 0px 4px 4px;
  
      &:not(:last-child) {
         margin-right: 30px;
+    }
+
+    @media screen and (max-width:480px) {
+        &:not(:last-child) {
+            margin-right:0px;
+        }
+        &{
+            margin-bottom: 20px;
+        }
     }
 }
 
