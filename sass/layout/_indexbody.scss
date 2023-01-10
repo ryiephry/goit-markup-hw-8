@@ -49,6 +49,14 @@
             margin-bottom:20px;
         }
     }
+
+    @media screen and (min-width:480px) and (max-width:781px) {
+
+        & {
+            padding-bottom:50px;
+        }
+    }
+
 }
 
 .paragraphs-positioning {
@@ -60,6 +68,14 @@
             display:block;
         }
     }
+     @media screen and (max-width:781px){
+    
+            & {
+               flex-wrap: wrap;
+               justify-content: center;
+               gap:20px;
+            }
+        }
 }
 
 .paragraphs-item {
@@ -86,6 +102,19 @@
 
                 }
 
+        @media screen and (max-width:781px) {
+
+            &{
+               /* max-width: 330px; */
+                margin-right: 0px;
+            }
+
+          &:not(:last-child) {
+              margin-right:0px;
+          }
+        
+        }
+
 }
 
 .paragraphs-titles {
@@ -104,6 +133,15 @@
       margin-bottom:10px;
      }
   }
+
+  @media screen and (max-width:781px) {
+
+      &{
+        margin-bottom:10px;
+      }
+
+    }
+
 }
 
 .paragraphs-text {
@@ -133,7 +171,14 @@
             display:none;
         }
     }
+
+    @media screen and (max-width:781px){
+        & {
+                display: none;
+            }
+    }
 }
+
 
 .images-title {
     font-weight: 700;
@@ -199,6 +244,15 @@
         padding-bottom:50px;
      }
    }
+
+   @media screen and (max-width:781) {
+
+     &{
+        padding-top: 50px;
+        padding-bottom: 50px;
+     }
+     
+   }
 }
 
 .profilepic-title{
@@ -230,6 +284,13 @@
 
     }
   }
+  @media screen and (max-width:781px){
+   &{
+     flex-wrap:wrap;
+     justify-content: center;
+     gap:20px;
+      }
+  }
 }
 
 .profilepic-item {
@@ -246,6 +307,12 @@ border-radius: 0px 0px 4px 4px;
         &{
             margin-bottom: 20px;
         }
+    }
+    @media screen and (max-width:781px) {
+        &:not(:last-child) {
+            margin-right: 0px;
+        }
+
     }
 }
 
@@ -294,4 +361,13 @@ border-radius: 0px 0px 4px 4px;
     position: relative;
 }
 
+
+.profile-image-media{
+
+    @media screen and (max-width:781px)
+    {
+    min-width: 330px;
+    }
+    
+}
                   /* portfolo page */
