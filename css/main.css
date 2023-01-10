@@ -151,9 +151,24 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .navigation {
+    margin-left: 50px;
+  }
+}
 
 .navigation__item:not(:last-child) {
   margin-right: 70px;
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .navigation__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 620px) {
+  .navigation__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .navigation__link {
@@ -227,7 +242,7 @@ ul {
   }
   .contact-info:not(:last-child) {
     margin-right: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -516,7 +531,7 @@ ul {
     display: block;
   }
 }
-@media screen and (max-width: 781px) {
+@media screen and (min-width: 480px) and (max-width: 781px) {
   .profilepic-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -638,6 +653,13 @@ ul {
     gap: 10px;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 781px) {
+  .regular-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 
 .regular-item {
   border: 1px solid #AFB1B8;
@@ -664,6 +686,15 @@ ul {
     margin-right: 0px;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 781px) {
+  .regular-item {
+    width: 220px;
+    flex-basis: calc((100% - 20px) / 6);
+  }
+  .regular-item:not(:last-child) {
+    margin-right: 0px;
+  }
+}
 
 /* footer */
 .footer-section {
@@ -682,6 +713,18 @@ ul {
     display: block;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer-ipad {
+    margin-left: 40px;
+  }
+}
 
 .footer-webstudio {
   margin-bottom: 10px;
@@ -692,12 +735,18 @@ ul {
     justify-content: center;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer-webstudio {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .footer-seperation {
   display: flex;
   font-style: normal;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer-seperation {
     display: flex;
     justify-content: center;
@@ -707,7 +756,7 @@ ul {
 .footer-list {
   margin-right: 70px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer-list {
     margin-right: 0px;
   }
@@ -717,6 +766,13 @@ ul {
   margin-top: 2px;
 }
 @media screen and (max-width: 480px) {
+  .footer-paragraph-space-1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer-paragraph-space-1 {
     display: flex;
     justify-content: center;
@@ -749,11 +805,17 @@ ul {
   width: 206px;
   margin-right: 91px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .find-us-section {
     margin-right: 0px;
     margin: auto;
     margin-top: 50px;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 768px) {
+  .find-us-section {
+    margin: 0px;
+    margin-left: 150px;
   }
 }
 
@@ -766,7 +828,7 @@ ul {
   color: var(--white-color);
   margin-bottom: 20px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 781px) {
   .Find-us-on {
     display: flex;
     justify-content: center;
@@ -782,6 +844,12 @@ ul {
 .footer-right {
   margin-top: 50px;
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer-right {
+    margin: auto;
+    margin-top: 50px;
+  }
+}
 
 .subscribe-header {
   font-weight: 700;
@@ -792,7 +860,7 @@ ul {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .subscribe-header {
     display: flex;
     justify-content: center;
@@ -802,7 +870,7 @@ ul {
 .form-footer {
   display: flex;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .form-footer {
     display: block;
   }
@@ -934,6 +1002,11 @@ ul {
 }
 .input-design:hover, .input-design:focus {
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .input-design {
+    margin-bottom: 20px;
+  }
 }
 
 .modal {
@@ -1268,6 +1341,11 @@ input[type=checkbox] {
 }
 .icons-6:hover, .icons-6:focus {
   color: #2196F3;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .icons-6 {
+    min-width: 200px;
+  }
 }
 
 .fill-current-color {

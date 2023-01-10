@@ -35,10 +35,27 @@ $accent-color:#2196f3;
             display: none;
         }
     }
+
+    @media screen and (min-width:480px) and (max-width:768px) {
+        & {
+            margin-left: 50px;
+        }
+    }
 }
 
 .navigation__item:not(:last-child) {
     margin-right: 70px;
+
+    @media screen and (min-width:480px) and (max-width:768px){
+        &{
+            margin-right:40px;
+        }
+    }
+    @media screen and (min-width:480px) and (max-width:620px) {
+        & {
+            margin-right:10px;
+        }
+    }
 }
 
 
@@ -133,7 +150,7 @@ $accent-color:#2196f3;
             }
               &:not(:last-child){
                margin-right: 0px;
-               margin-bottom:15px;
+               margin-bottom:10px;
             }
         }
 }

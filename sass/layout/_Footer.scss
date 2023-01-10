@@ -3,6 +3,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-dark-color);
+
+  
 }
 
 /*.container-footer {}*/
@@ -16,8 +18,21 @@
             display:block;
         }
     }
+    @media screen and (min-width:480px) and (max-width:768px) {
+        & {
+            display: flex;
+            flex-wrap:wrap;
+        }
+    }
 }
-
+.footer-ipad {
+    @media screen and (min-width:480px) and (max-width:768px) {
+        &{
+            margin-left: 40px;
+        }
+    }
+    
+}
 .footer-webstudio {
     margin-bottom: 10px;
 
@@ -27,24 +42,31 @@
                justify-content:center;
             }
         }
+    @media screen and (min-width:480px) and (max-width:768px) {
+        & {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 .footer-seperation {
     display: flex;
     font-style: normal;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:768px) {
             &{
                 display: flex;
                 justify-content: center;
             }
         }
+ 
 }
 
 .footer-list {
     margin-right: 70px;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:768px) {
             & {     
                 margin-right:0px;
             }
@@ -59,6 +81,13 @@
                 display: flex;
                 justify-content: center;
                 text-align:center;
+            }
+        }
+        @media screen and (min-width:480px)and (max-width:768px) {
+            & {
+                display: flex;
+                justify-content: center;
+                text-align: center;
             }
         }
 }
@@ -89,12 +118,16 @@
     width: 206px;
     margin-right: 91px;
 
-    @media screen and (max-width:480px) {
-
+    @media screen and (max-width:768px) {
         margin-right:0px;
         margin: auto;
         margin-top: 50px;
     }
+    @media screen and (min-width:650px) and (max-width:768px){
+       margin:0px;
+       margin-left:150px;
+      }
+    
 }
 
 .Find-us-on {
@@ -106,12 +139,13 @@
     color: var(--white-color);
     margin-bottom: 20px;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:781px) {
             &{
                 display: flex;
                 justify-content: center;
             }
         }
+    
 }
 
 .find-us-list {
@@ -122,6 +156,13 @@
 /* footer right section */
 .footer-right{ 
     margin-top:50px;
+
+    @media screen and (min-width:480px) and (max-width: 768px){
+        &{
+            margin:auto;
+            margin-top:50px; 
+        }
+    }
 }
 
 
@@ -137,7 +178,7 @@
     color: #FFFFFF;
     margin-bottom: 20px;
 
-   @media screen and (max-width:480px) {
+   @media screen and (max-width:768px) {
 
     &{
         display:flex;
@@ -149,7 +190,7 @@
 .form-footer {
     display: flex;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:768px) {
 
         &{
             display:block;
