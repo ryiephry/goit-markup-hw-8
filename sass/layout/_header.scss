@@ -20,6 +20,8 @@ $accent-color:#2196f3;
 
 .header-navigation {
     display: flex;
+    padding-top:30px;
+    padding-bottom:22px;
 }
 
 .navigation {
@@ -92,6 +94,13 @@ $accent-color:#2196f3;
     display: flex;
     align-items: center;
     margin-left: auto;
+
+    @media screen and (min-width:768) and (max-width:1200px) {
+
+        &{
+            display:block;
+        }
+    }
 }
 
 .contact-info {
@@ -107,7 +116,20 @@ $accent-color:#2196f3;
                         display: none;    
             }
         }
+
+        @media screen and (min-width:480px) and (max-width:1200px) {
+
+            &{
+               
+            }
+            &:not(:last-child){
+            margin-right: 0px;
+            }
+        }
+
 }
+
+
 
 
 .contacts-link {
@@ -125,6 +147,8 @@ $accent-color:#2196f3;
     &:focus {
             color: var(--accent-color);
         }
+
+    @media screen and (min-width:748px)
 }
 
 .contacts-link::after {

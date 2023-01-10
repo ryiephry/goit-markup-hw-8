@@ -137,6 +137,8 @@ ul {
 
 .header-navigation {
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 22px;
 }
 
 .navigation {
@@ -202,6 +204,11 @@ ul {
   align-items: center;
   margin-left: auto;
 }
+@media screen and (min-width: 768) and (max-width: 1200px) {
+  .header-contacts {
+    display: block;
+  }
+}
 
 .contact-info {
   position: relative;
@@ -212,6 +219,11 @@ ul {
 @media screen and (max-width: 480px) {
   .contact-info {
     display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .contact-info:not(:last-child) {
+    margin-right: 0px;
   }
 }
 
