@@ -25,16 +25,17 @@
                 </a>
 
                 <div>
-                    <button class="mobile-button">
-
+                    <button type="button" class="mobile-button js-open-menu">
                         <svg class="mobile-icon" width="24px" height="24px">
 
                             <use href="./images/sprite.svg#icon-toggle-menu">
 
                             </use>
                         </svg>
+
                     </button>
                 </div>
+
 
                 <ul class="navigation">
 
@@ -89,6 +90,74 @@
 
 
     </header>
+
+    <div>
+        <div class="menu-container js-menu-container">
+
+
+
+            <div class="mobile-close-div">
+                <button type="button" class="mobile-button-close js-close-menu">
+
+                    <svg class="close-mobile-menu" width="15px" height="15px">
+
+                        <use href="./images/sprite.svg#icon-close-button">
+
+                        </use>
+                    </svg>
+
+                </button>
+            </div>
+
+
+            <ul class="navigation_menu">
+
+                <li class="navigation__item_menu">
+                    <a href="./index.html" class=" navigation-link__current_menu  navigation__link_menu">Studio</a>
+                </li>
+
+                <li class="navigation__item_menu">
+                    <a href="portfolio.html" class="navigation__link_menu">Portfolio</a>
+                </li>
+
+                <li class="navigation__item_menu">
+                    <a href="#" class="navigation__link_menu">Contacts</a>
+                </li>
+            </ul>
+            <div class="main-menu">
+                <ul>
+                    <li class="contacts-info_menu">
+                        <a href="tel:+380961111111" class="contacts-num_menu">+38 096 111 11 11</a>
+                    </li>
+                    <li class="contacts-info_menu">
+                        <a href="mailto:info@devstudio.com" class="contacts-email_menu">info@devstudio.com</a>
+                    </li>
+
+                </ul>
+
+                <ul class="menu-footer">
+
+                    <li class="social-space">
+
+                        <a href="Instagram.com" class="menu-Footer-Icons">Instagram </a>
+                    </li>
+                    <li class="social-space">
+                        <a href="Twitter.com" class="menu-Footer-Icons">Twitter</a>
+                    </li>
+                    <li class="social-space">
+                        <a href="Facebook.com" class="menu-Footer-Icons">Facebook</a>
+                    </li>
+                    <li class="social-space">
+                        <a href="LinkedIn.com" class="menu-Footer-Icons">LinkedIn</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
     <main class="main-section">
         <section class="hero">
@@ -865,6 +934,7 @@
 
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-modal.js"></script>
 </body>
 
 </html>
