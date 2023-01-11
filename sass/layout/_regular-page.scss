@@ -35,26 +35,30 @@
 
 .regular-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:-30px;
+    margin-left:10px;
     color: #2196F3;
+    flex-basis: calc(100% / 2 - 30px);
 
-    @media screen and (max-width:480px){
-        &{
-            justify-content:center;
-            flex-wrap:wrap;
-            gap: 10px;
+    @media screen and (min-width:768px) and (max-width:1199){
+        flex-basis: calc((100% / 3) - 20px);
+    }
+    @media screen and (min-width:768px){
+
+    }
+
+        @media screen and (min-width:1200px)  {
+
+         /*   flex-basis: calc(100% / 6 ); */
+            display:flex;
         }
-    }
 
-   @media screen and (min-width:480px) and (max-width:768px) {
-    &{
-       justify-content:center;
-       flex-wrap:wrap;
-       gap:20px;
-    }
-   }
-    
-   
+
 }
+
 
 .regular-item {
     border: 1px solid #AFB1B8;
@@ -62,21 +66,27 @@
     width: 170px;
     display: flex;
     justify-content: center;
-    width: 170px;
     height: 92px;
     color: currentColor;
     color: #2196F3;
     position: relative;
     transition: color 250ms var(--main-q-b), border-color 250ms var(--main-q-b);
+    @media screen and (max-width:768px) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 20px;
+        margin-top: 20px;
+    }
 
+    @media screen and (min-width:769px) and (max-width:1199px) {
+        flex-basis: calc((100% / 3) - 30px);
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
     &:hover {
             border: 1px solid #2196f3;
             color: #2196f3;
         }
-
-         &:not(:last-child) {
-             margin-right: 30px;
-         }
 
       @media screen and (max-width:480px) {
         &:not(:last-child){
@@ -84,19 +94,29 @@
         }
 
       }
-
-        @media screen and (min-width:480px) and (max-width:768px) {
-            &{
-                width:220px;
-                flex-basis: calc((100% - 20px) / 6);
-            }
-            &:not(:last-child) {
-                margin-right:0px;
-            }
-        }
+    
+       
     @media screen and (max-width:480px){
         height:80px;
-        width:40%;
+        width:100%;
+    }
+
+    @media screen and (min-width:1200px){
+        &{
+            flex-basis:calc((100% - 30px) / 6);
+            margin-left:20px;
+            margin-top:20px;
+        }
     }
 }
+/*
+ @media screen and (min-width:768px) and (max-width:1200px) {
+     & {
+         width: 220px;
+         flex-basis: calc((100% - 30px) / 3);
+     }
 
+     &:not(:last-child) {
+         margin-right: 0px;
+     }
+ }*/
