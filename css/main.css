@@ -226,6 +226,12 @@ ul {
   padding-top: 30px;
   padding-bottom: 22px;
 }
+@media screen and (max-width: 780px) {
+  .header-navigation {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
 
 .navigation {
   display: flex;
@@ -770,6 +776,7 @@ ul {
 @media screen and (max-width: 768px) {
   .profile-image-media {
     min-width: 330px;
+    width: 100%;
   }
 }
 
@@ -1189,6 +1196,11 @@ ul {
   .modal {
     width: 400px;
     height: 600px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal {
+    width: 380px;
   }
 }
 

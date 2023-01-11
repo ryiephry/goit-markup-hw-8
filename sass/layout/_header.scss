@@ -22,6 +22,13 @@ $accent-color:#2196f3;
     display: flex;
     padding-top:30px;
     padding-bottom:22px;
+
+    @media screen and (max-width:780px){
+        &{
+            padding-bottom:0px;
+            padding-top:0px;
+        }
+    }
 }
 
 .navigation {
