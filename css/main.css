@@ -19,14 +19,6 @@ body {
   margin: 0px;
   display: block;
 }
-@media screen and (max-width: 480px) {
-  body ::-webkit-scrollbar {
-    display: none;
-  }
-  body {
-    overflow: hidden;
-  }
-}
 
 .container {
   max-width: 1200px;
@@ -453,7 +445,7 @@ ul {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/images/background-img-mobile-1.jpg");
+    background-image: url("./../images/background-img-mobile-1.jpg");
     display: block;
     max-width: 100%;
     height: auto;
@@ -461,7 +453,7 @@ ul {
 }
 @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .hero {
-    background-image: url("/images/background-img-mobile-2.jpg");
+    background-image: url("./../images/background-img-mobile-2.jpg");
     display: block;
     max-width: 100%;
     height: auto;
