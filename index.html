@@ -469,10 +469,33 @@
                 <ul class="profilepic-list">
 
                     <li class="profilepic-item">
+                        <!--    <img srcset="./images/profilespic1.jpg  1x,
+                              ./images/profilespic-1-mobile.jpg 2x , 
+                              ./images/profilespic-1-tablet.jpg 3x " src="./images/profilespic1.jpg"
+                            alt="Christopher Walker" class="profile-image-media" width="270">-->
 
 
-                        <img class="profile-image-media" src="./images/profilespic1.jpg" alt="Christopher Walker"
-                            width="270">
+
+                        <picture>
+
+                            <source srcset="./images/profilespic1.jpg  1x, 
+
+                                            ./images/profilespic1.jpg  2x," media="(min-width:1200px)" width="270"
+                                height="260" />
+
+                            <source srcset="./images/profilespic-1-tablet.jpg 1x , 
+
+                                            ./images/profilespic-1-tablet.jpg 2x" media="(min-width:768px)" width="354"
+                                height="374" />
+
+                            <source srcset="./images/profilespic-1-mobile.jpg 1x, 
+
+                                             ./images/profilespic-1-mobile.jpg 2x" media="(min-width:320px)"
+                                width="450" height="460" />
+
+                            <img class="profile-image-media" src="./images/profilespic1.jpg" alt="Christopher Walker"
+                                width="270" height="260" />
+                        </picture>
 
 
                         <div class="profile-spacing">
@@ -544,7 +567,27 @@
                         </div>
                     </li>
                     <li class="profilepic-item">
-                        <img class="profile-image-media" src="./images/profilepic2.jpg" alt="Kylie Evans" width="270">
+
+                        <picture>
+
+                            <source srcset="./images/profilespic2.jpg  1x, 
+                        
+                                                                    ./images/profilespic2.jpg  2x,"
+                                media="(min-width:1200px)" width="270" height="260" />
+
+                            <source srcset="./images/profilespic-2-tablet.jpg 1x , 
+                        
+                                                                    ./images/profilespic-2-tablet.jpg 2x"
+                                media="(min-width:768px)" width="354" height="374" />
+
+                            <source srcset="./images/profilespic-2-mobile.jpg 1x, 
+                        
+                                                                     ./images/profilespic-2-mobile.jpg 2x"
+                                media="(min-width:320px)" width="450" height="460" />
+
+                            <img class="profile-image-media" src="./images/profilespic2.jpg" alt="Kylie Evans"
+                                width="270" height="260" />
+                        </picture>
 
                         <div class="profile-spacing">
 
