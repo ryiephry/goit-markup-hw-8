@@ -19,6 +19,14 @@ body {
   margin: 0px;
   display: block;
 }
+@media screen and (max-width: 480px) {
+  body ::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    overflow: hidden;
+  }
+}
 
 .container {
   max-width: 1200px;
@@ -497,7 +505,7 @@ ul {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 781px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .paragraphs-discription {
     padding-bottom: 50px;
   }
@@ -511,7 +519,7 @@ ul {
     display: block;
   }
 }
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 768px) {
   .paragraphs-positioning {
     flex-wrap: wrap;
     justify-content: center;
@@ -534,7 +542,7 @@ ul {
     margin-right: 0px;
   }
 }
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 768px) {
   .paragraphs-item {
     /* max-width: 330px; */
     margin-right: 0px;
@@ -559,7 +567,7 @@ ul {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 768px) {
   .paragraphs-titles {
     margin-bottom: 10px;
   }
@@ -588,7 +596,7 @@ ul {
     display: none;
   }
 }
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 768px) {
   .images-section {
     display: none;
   }
@@ -655,7 +663,7 @@ ul {
     padding-bottom: 50px;
   }
 }
-@media screen and (max-width: 781) {
+@media screen and (max-width: 768) {
   .profilepics-section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -687,7 +695,7 @@ ul {
     display: block;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 781px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .profilepic-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -709,7 +717,7 @@ ul {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 768px) {
   .profilepic-item:not(:last-child) {
     margin-right: 0px;
   }
@@ -767,7 +775,7 @@ ul {
   max-width: 100%;
   height: auto;
 }
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 768px) {
   .profile-image-media {
     min-width: 330px;
   }
@@ -816,7 +824,7 @@ ul {
     gap: 10px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 781px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .regular-list {
     justify-content: center;
     flex-wrap: wrap;
@@ -849,7 +857,7 @@ ul {
     margin-right: 0px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 781px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .regular-item {
     width: 220px;
     flex-basis: calc((100% - 20px) / 6);

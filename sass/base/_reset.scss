@@ -19,6 +19,15 @@ body {
     letter-spacing: 0.02em;
     margin: 0px;
     display: block;
+
+    @media screen and (max-width:480px){
+        ::-webkit-scrollbar{
+            display:none;
+        }
+        &{
+            overflow: hidden;
+        }
+    }
 }
 
 .container {

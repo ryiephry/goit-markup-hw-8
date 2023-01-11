@@ -71,7 +71,7 @@
         }
     }
 
-    @media screen and (min-width:480px) and (max-width:781px) {
+    @media screen and (min-width:480px) and (max-width:768px) {
 
         & {
             padding-bottom:50px;
@@ -90,7 +90,7 @@
             display:block;
         }
     }
-     @media screen and (max-width:781px){
+     @media screen and (max-width:768px){
     
             & {
                flex-wrap: wrap;
@@ -124,7 +124,7 @@
 
                 }
 
-        @media screen and (max-width:781px) {
+        @media screen and (max-width:768px) {
 
             &{
                /* max-width: 330px; */
@@ -156,7 +156,7 @@
      }
   }
 
-  @media screen and (max-width:781px) {
+  @media screen and (max-width:768px) {
 
       &{
         margin-bottom:10px;
@@ -194,7 +194,7 @@
         }
     }
 
-    @media screen and (max-width:781px){
+    @media screen and (max-width:768px){
         & {
                 display: none;
             }
@@ -267,7 +267,7 @@
      }
    }
 
-   @media screen and (max-width:781) {
+   @media screen and (max-width:768) {
 
      &{
         padding-top: 50px;
@@ -306,7 +306,7 @@
 
     }
   }
-  @media screen and (min-width:480px) and (max-width:781px){
+  @media screen and (min-width:480px) and (max-width:768px){
    &{
      flex-wrap:wrap;
      justify-content: center;
@@ -330,7 +330,7 @@ border-radius: 0px 0px 4px 4px;
             margin-bottom: 20px;
         }
     }
-    @media screen and (max-width:781px) {
+    @media screen and (max-width:768px) {
         &:not(:last-child) {
             margin-right: 0px;
         }
@@ -391,7 +391,7 @@ border-radius: 0px 0px 4px 4px;
     height: auto;
 
 
-    @media screen and (max-width:781px){
+    @media screen and (max-width:768px){
     min-width: 330px;
     }
     
