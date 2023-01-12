@@ -578,47 +578,42 @@ ul {
 }
 
 /* images  section */
-/*
 .images-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    @media screen and (max-width:480px) {
-
-        &{
-            display:none;
-        }
-    }
-
-    @media screen and (min-width:1px)and (max-width:1199px){
-        &{
-                display: none;
-            }
-    }
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+@media screen and (max-width: 480px) {
+  .images-section {
+    display: none;
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 1199px) {
+  .images-section {
+    display: none;
+  }
 }
 
-
 .images-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .image-list {
-    display: flex;
-    margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
 }
 
 .images-item {
-    position: relative;
-
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
+  position: relative;
 }
+.images-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*
 .images-item:not(:last-child) {
     margin-right: 30px;
@@ -684,11 +679,11 @@ ul {
 }
 
 .profilepic-list {
-  display: flex;
+  display: block;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1199px) {
   .profilepic-list {
-    display: block;
+    display: flex;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -698,23 +693,36 @@ ul {
     gap: 20px;
   }
 }
+@media screen and (min-width: 768PX) and (max-width: 1199px) {
+  .profilepic-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 
 .profilepic-item {
   border-radius: 0px 0px 4px 4px;
 }
-.profilepic-item:not(:last-child) {
-  margin-right: 30px;
-}
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1199px) {
   .profilepic-item:not(:last-child) {
-    margin-right: 0px;
+    margin-right: 30px;
   }
   .profilepic-item {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 768px) {
+  .profilepic-item {
+    margin-bottom: 20px;
+  }
   .profilepic-item:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .profilepic-item {
     margin-right: 0px;
   }
 }
