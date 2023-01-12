@@ -18,25 +18,21 @@
             display:block;
         }
     }
-    @media screen and (min-width:480px) and (max-width:768px) {
+    @media screen and (min-width:480px) and (max-width:1199px) {
         & {
-            display: flex;
             flex-wrap:wrap;
         }
     }
 }
 .footer-ipad {
-    @media screen and (min-width:480px) and (max-width:768px) {
-        &{
-            margin-left: 40px;
-        }
+    @media screen and (max-width:1198px) {
+        margin-right: auto;
     }
-    
 }
 .footer-webstudio {
     margin-bottom: 10px;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:1199px) {
             &{
                display:flex;
                justify-content:center;
@@ -64,19 +60,20 @@
 }
 
 .footer-list {
-    margin-right: 70px;
-
     @media screen and (max-width:768px) {
             & {     
                 margin-right:0px;
             }
         }
+    @media screen and (min-width:1199px) {
+        margin-right: 70px;
+    }
 }
 
 .footer-paragraph-space-1 {
     margin-top: 2px;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:1199px) {
             & {
                 display: flex;
                 justify-content: center;
@@ -116,18 +113,16 @@
 
 .find-us-section {
     width: 206px;
-    margin-right: 91px;
+    margin-right: auto;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1199px) {
         margin-right:0px;
-        margin: auto;
-        margin-top: 50px;
     }
-    @media screen and (min-width:650px) and (max-width:768px){
-       margin:0px;
-       margin-left:150px;
-      }
-    
+    @media screen and (max-width:480px) {
+        margin:auto;
+        margin-top: 20px;
+    }
+
 }
 
 .Find-us-on {
@@ -139,7 +134,7 @@
     color: var(--white-color);
     margin-bottom: 20px;
 
-    @media screen and (max-width:781px) {
+    @media screen and (max-width:1199px) {
             &{
                 display: flex;
                 justify-content: center;
@@ -155,14 +150,16 @@
 
 /* footer right section */
 .footer-right{ 
+
     margin-top:50px;
 
-    @media screen and (min-width:480px) and (max-width: 768px){
+    @media screen and (min-width:480px) and (max-width: 1199px){
         &{
             margin:auto;
             margin-top:50px; 
         }
     }
+
 }
 
 
@@ -178,7 +175,7 @@
     color: #FFFFFF;
     margin-bottom: 20px;
 
-   @media screen and (max-width:768px) {
+   @media screen and (max-width:1199px) {
 
     &{
         display:flex;
@@ -188,14 +185,16 @@
 }
 
 .form-footer {
-    display: flex;
-
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1199px) {
 
         &{
             display:block;
         }
     }
+    @media screen and (min-width:1200px) {
+        display:flex;
+    }
+
 }
 
 .form-footer-input {
