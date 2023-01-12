@@ -23,11 +23,25 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    width:100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+
+    margin: auto;
+    @media screen and (min-width: 200px) and (max-width:767px){
+         max-width:480px;
+       
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        margin:auto;
+    }
 }
+
 
 * {
     text-decoration: none;
