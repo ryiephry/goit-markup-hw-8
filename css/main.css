@@ -838,7 +838,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .regular-list {
-    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
   }
 }
 
@@ -847,12 +848,17 @@ ul {
   display: flex;
   justify-content: center;
   height: 92px;
-  max-width: 170px;
+  max-width: 220px;
   color: currentColor;
   color: #2196F3;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   transition: color 250ms var(--main-q-b), border-color 250ms var(--main-q-b);
+}
+@media screen and (max-width: 768px) {
+  .regular-item {
+    flex-basis: 50%;
+  }
 }
 @media screen and (max-width: 768px) {
   .regular-item {
@@ -862,7 +868,7 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .regular-item {
-    min-width: 226px;
+    min-width: 230px;
   }
 }
 @media screen and (min-width: 1200px) {
