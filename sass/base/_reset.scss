@@ -1,17 +1,4 @@
-:root {
-    --accent-color: #2196f3;
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
-    --white-color: #ffffff;
-    --background-dark-color: #2f303a;
-    --background-light-color: #f5f4fa;
-    --currentColor: rgb(196, 196, 34);
-    --main-q-b: cubic-bezier(0.4, 0, 0.2, 1);
-    --black-: black;
-    --checkbox-color: var(--white-color);
-
-}
-
+@use '../components/vars';
 body {
     font-family: 'Roboto';
     font-size: 14px;
@@ -76,9 +63,29 @@ ul {
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: vars.$accent-color;
 }
-/*
-* {
-    outline: solid;
-}*/
+
+  $accent-color: #2196f3;
+  $primary-text-color: #212121;
+  $secondary-text-color: #757575;
+  $white-color: #ffffff;
+  $background-dark-color: #2f303a;
+  $background-light-color: #f5f4fa;
+  $currentColor: rgb(196, 196, 34);
+  $main-q-b: cubic-bezier(0.4, 0, 0.2, 1);
+  $black-: black;
+  $checkbox-color: var(--white-color);
+
+  :root {
+      --accent-color: #2196f3;
+      --primary-text-color: #212121;
+      --secondary-text-color: #757575;
+      --white-color: #ffffff;
+      --background-dark-color: #2f303a;
+      --background-light-color: #f5f4fa;
+      --currentColor: rgb(196, 196, 34);
+      --main-q-b: cubic-bezier(0.4, 0, 0.2, 1);
+      --black-: black;
+      --checkbox-color: var(--white-color);
+  }

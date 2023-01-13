@@ -1,9 +1,11 @@
+@use '../components/vars';
+
 /* input */
 .input-form-div {
     display: block;
     position: relative;
-    color: var(--primary-text-color);
-    transition: color 250ms var(--main-q-b);
+    color: vars.$primary-text-color;
+    transition: color 250ms vars.$main-q-b;
 }
 
 .input-form-main {
@@ -18,11 +20,11 @@
     margin-top: 4px;
     color: #757575;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    transition: color 250ms var(--main-q-b), border 250ms var(--main-q-b);
+    transition: color 250ms vars.$main-q-b, border 250ms vars.$main-q-b;
 
     &:focus,
     &:hover {
-            border: 1px solid var(--accent-color);
+            border: 1px solid vars.$accent-color;
         }
 
     @media screen and (max-width:400px) {
@@ -33,14 +35,14 @@
 
 .input-form-main:focus+.svg-forms,
 .input-form-main:hover+.svg-forms {
-    color: var(--accent-color);
+    color: vars.$accent-color;
 }
 
 .input-design {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
-    background-color: var(--background-dark-color);
+    background-color: vars.$background-dark-color;
     padding: 10px;
     width: 360px;
     height: 50px;
@@ -49,11 +51,11 @@
     letter-spacing: 0.03em;
     text-align: left;
     outline: none;
-    transition: color 250ms var(--main-q-b), border 250ms var(--main-q-b);
+    transition: color 250ms vars.$main-q-b, border 250ms vars.$main-q-b;
 
     &:hover,
     &:focus {
-            border: 1px solid var(--accent-color);
+            border: 1px solid vars.$accent-color;
         }
     
         @media screen and (max-width:1199px) {

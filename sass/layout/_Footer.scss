@@ -1,13 +1,12 @@
+@use '../components/vars';
 /* footer */
 .footer-section {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--background-dark-color);
-
+    background-color: vars.$background-dark-color;
   
 }
 
-/*.container-footer {}*/
 
 .footer-container {
     display: flex;
@@ -96,7 +95,7 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: var(--white-color);
+    color: vars.$white-color;
 }
 
 .mail-tele-color {
@@ -161,9 +160,6 @@
     }
 
 }
-
-
-.subscribe-section {}
 
 
 .subscribe-header {

@@ -1,3 +1,4 @@
+@use '../components/vars';
 .contacts-svg {
     margin-right: 10px;
     fill: currentColor;
@@ -5,7 +6,7 @@
 
     &:hover {
         fill: currentColor;
-        color: #2196F3;
+        color: vars.$accent-color;
     }
 }
 /*body*/
@@ -25,17 +26,17 @@
     border-radius: 50%;
     position: relative;
     transition-duration: 250ms;
-    transition: color 250ms var(--main-q-b), background-color 250ms var(--main-q-b);
+    transition: color 250ms vars.$main-q-b, background-color 250ms vars.$main-q-b;
 
     &:hover,
     &:focus {
-        background-color: #2196F3;
+        background-color: vars.$accent-color;
         color: #FFFFFF;
     }
 }
 
 .futures-icon-svg {
-    background-color: var(--background-light-color);
+    background-color: vars.$background-light-color;
     padding: 25px 102px;
     margin-bottom: 30px;
 
@@ -55,11 +56,11 @@
     justify-content: center;
     display: flex;
     position: relative;
-    transition: color 250ms var(--main-q-b), border-color 250ms var(--main-q-b);
+    transition: color 250ms vars.$main-q-b, border-color 250ms vars.$main-q-b;
 
     &:hover,
     &:focus {
-        color: #2196F3;
+        color: vars.$accent-color;
     }
 
     @media screen and (min-width:481px) and (max-width:768px){
@@ -89,17 +90,17 @@
     color: #FFFFFF;
     position: relative;
     border-radius: 50%;
-    transition: color 250ms var(--main-q-b), background-color 250ms var(--main-q-b);
+    transition: color 250ms vars.$main-q-b, background-color 250ms vars.$main-q-b;
 
     &:hover,
     &:focus {
         border-radius: 23px;
-        background-color: #2196F3;
+        background-color: vars.$accent-color;
         color: #FFFFFF;
     }
 }
 
 .subscibe-svg {
-    color: var(--white-color);
+    color: vars.$white-color;
     margin-left: 20px;
 }

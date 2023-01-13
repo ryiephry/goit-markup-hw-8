@@ -1,8 +1,9 @@
+   @use '../components/vars';
                                /* hero section */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--background-dark-color);
+    background-color: vars.$background-dark-color;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) , url("./../images/background-img-index-hw04.jpg");
     background-size: cover;
     background-position: center;
@@ -36,8 +37,8 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-color);
-    border-color: var(--primary-text-color);
+    color: vars.$white-color;
+    border-color: vars.$primary-text-color;
     margin-bottom: 30px;
 
     @media screen and (max-width:480px) {
@@ -106,7 +107,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
+  color: vars.$primary-text-color;
 
   @media screen and (max-width:480px) {
 
@@ -124,7 +125,7 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: vars.$secondary-text-color;
 }
 
                                   /* images  section */
@@ -154,7 +155,7 @@
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: vars.$primary-text-color;
 }
 
 .image-list {
@@ -197,7 +198,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    background-color: var(--background-light-color);
+    background-color: vars.$background-light-color;
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -225,8 +226,8 @@
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    background-color: var(--background-light-color);
+    color: vars.$primary-text-color;
+    background-color: vars.$background-light-color;
     margin-bottom: 50px;
  
     @media screen and (max-width:480px) {
@@ -299,7 +300,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: vars.$primary-text-color;
 }
 
 .paragraphs {

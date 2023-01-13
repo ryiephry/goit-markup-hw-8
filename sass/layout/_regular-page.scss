@@ -1,3 +1,5 @@
+@use '../components/vars';
+
 /* regular section */
 .regular-section {
     padding-top: 94px;
@@ -39,7 +41,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap:10px;
-    color: #2196F3;
+    color: vars.$accent-color;
 
     @media screen and (max-width:480px){
         &{
@@ -63,10 +65,14 @@
     height: 92px;
     max-width: 220px;
     color: currentColor;
-    color: #2196F3;
+    color: vars.$accent-color;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: color 250ms var(--main-q-b), border-color 250ms var(--main-q-b);
+    transition: color 250ms vars.$main-q-b, border-color 250ms vars.$main-q-b;
+
+    &:hover {
+       color:vars.$accent-color;
+    }
    
 
     @media screen and (max-width:768px) {
@@ -85,8 +91,8 @@
 
     
     &:hover {
-            border: 1px solid #2196f3;
-            color: #2196f3;
+            border: 1px solid vars.$accent-color;
+            color: vars.$accent-color;
         }
 
       @media screen and (max-width:480px) {
