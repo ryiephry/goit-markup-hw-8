@@ -150,7 +150,7 @@
         }
 
     @media screen and (max-width:480px){
-        width:360px;
+        width:100%;
     }
 }
 
@@ -190,7 +190,7 @@
             border: 1px solid var(--accent-color);
         }
 @media screen and (max-width:480px) {
-    width:360px;
+    width:100%;
 }
 }
 
@@ -257,7 +257,6 @@ input[type=checkbox] {
     letter-spacing: 0.03em;
     color: #757575;
     transition: color 250ms var(--main-q-b);
-
 
     &:hover {
             color: var(--accent-color);

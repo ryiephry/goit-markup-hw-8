@@ -1449,7 +1449,7 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .input-form-main {
-    width: 360px;
+    width: 100%;
   }
 }
 
@@ -1488,7 +1488,7 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .comments-textarea {
-    width: 360px;
+    width: 100%;
   }
 }
 
