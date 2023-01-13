@@ -24,6 +24,10 @@
     &:hover {
             border: 1px solid var(--accent-color);
         }
+
+    @media screen and (max-width:400px) {
+        max-width:330px;
+    }
 }
 
 

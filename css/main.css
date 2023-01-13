@@ -614,10 +614,6 @@ ul {
   margin-right: 30px;
 }
 
-/*
-.images-item:not(:last-child) {
-    margin-right: 30px;
-}*/
 .overlay-box {
   bottom: 0px;
   position: absolute;
@@ -823,17 +819,12 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   color: #2196F3;
 }
 @media screen and (max-width: 480px) {
   .regular-list {
     flex-basis: calc(50% - 10px);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199) {
-  .regular-list {
-    flex-basis: calc(33.3333333333% - 20px);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -857,13 +848,8 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .regular-item {
-    flex-basis: 50%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .regular-item {
+    flex-basis: calc(50% - 30px);
     max-width: 210px;
-    flex-basis: 50%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1170,6 +1156,11 @@ ul {
 .input-form-main:focus, .input-form-main:hover {
   border: 1px solid var(--accent-color);
 }
+@media screen and (max-width: 400px) {
+  .input-form-main {
+    max-width: 330px;
+  }
+}
 
 .input-form-main:focus + .svg-forms,
 .input-form-main:hover + .svg-forms {
@@ -1222,7 +1213,7 @@ ul {
 }
 @media screen and (max-width: 400px) {
   .modal {
-    width: 380px;
+    width: 370px;
   }
 }
 
@@ -1530,7 +1521,6 @@ input[type=checkbox] {
 
 .icons-6 {
   Color: #AFB1B8;
-  width: 170px;
   justify-content: center;
   display: flex;
   position: relative;
